@@ -1,0 +1,121 @@
+.container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: "main main . . ";
+    background-color: var(--blue);
+    /* border-top: 2px solid var(--black); */
+    border-radius: 25px 25px 0px 0px;
+    box-shadow: 0 0px 30px rgb(0 0 0 / 30%);
+    overflow: hidden;
+    padding-bottom: 5vh;
+    /* position: absolute; */
+    width: 100%;
+    bottom: 0;
+    justify-items: center;
+}
+
+.mainDiv {
+    grid-area: main;
+    text-align: left;
+    padding: 0 4rem;
+    padding-top: 2rem;
+}
+
+.logo {
+    width: 250px;
+}
+
+.para {
+    color: var(--white);
+    font-weight: 600;
+    font-size: 0.75rem;
+    /* line-height: 29px; */
+    /* width: 75%; */
+}
+
+a {
+    text-decoration: none;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    text-decoration: none;
+    padding-top: 2rem;
+    line-height: 1.5;
+}
+
+.heading {
+    color: var(--white);
+}
+
+.address {
+    color: var(--white);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: left;
+    padding-top: 2rem;
+}
+
+.email i {
+    padding-right: 0.4rem;
+}
+
+.copyright {
+    color: var(--white);
+    margin-top: 4rem;
+    font-style: italic;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.footerli {
+    text-align: justify;
+}
+
+.footerli {
+    display: inline-block;
+    padding: 0.5vh 1vw;
+}
+
+.footerli a,
+.contact a {
+    text-decoration: none !important;
+    color: var(--white);
+}
+
+.footerli a:hover,
+.contact a:hover {
+    text-decoration: underline;
+    color: var(--white);
+    cursor: pointer;
+}
+
+@media screen and (max-width: 650px) {
+    .container {
+        height: auto;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        /* padding-bottom: 5vw; */
+    }
+    .footerul,
+    .footerli {
+        display: block;
+        width: -webkit-fill-available;
+        text-align: left;
+        font-size: 0.9rem;
+    }
+    .copyright {
+        position: relative;
+        bottom: 0vw;
+        margin-top: 1vw;
+    }
+    .mainDiv {
+        text-align: center;
+    }
+}

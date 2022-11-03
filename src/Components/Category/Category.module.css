@@ -1,0 +1,126 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* background: var(--white); */
+}
+
+.heading {
+    margin: 1.5rem 0 1.5rem 0;
+    font-size: 3rem;
+    color: var(--grey);
+}
+
+.section {
+    /* max-height: 400px; */
+    /* max-width: 500px; */
+    width: 70%;
+}
+
+.categories_img {
+    display: block;
+    columns: 3;
+    height: auto;
+    overflow: hidden;
+    margin-bottom: 5vh;
+    column-gap: 3vw;
+}
+
+.headers {
+    margin-bottom: 1.5vw;
+    box-shadow: 0 0px 30px rgb(0 0 0 / 10%);
+    border-radius: 25px;
+    padding-bottom: 1vh;
+}
+
+.images {
+    display: inline-block;
+    width: -webkit-fill-available;
+    height: 21vh;
+    overflow: hidden;
+    border-radius: 25px 25px 0px 0px;
+}
+
+.label {
+    width: -webkit-fill-available;
+    padding: 5vh 0vw;
+}
+
+.jpg {
+    width: -webkit-fill-available;
+    /* margin: 2vh 0vw; */
+}
+
+.para {
+    float: center;
+    color: var(--black);
+    font-size: 20px;
+    margin: 1.5vh 0.5vw;
+}
+
+@media screen and (max-width: 860px) {
+    .images {
+        height: 10vh;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .container {
+        height: auto;
+    }
+    .section {
+        width: 85%;
+        height: auto;
+    }
+    .categories_img {
+        column-count: 2;
+        -moz-column-count: 2;
+        width: 90vw;
+    }
+    .headers {
+        margin-bottom: 3vh;
+        display: inline-block;
+        width: 43vw;
+    }
+    .images {
+        /* display: inline-block; */
+        width: -webkit-fill-available;
+        height: 15vh;
+        overflow: hidden;
+        border-radius: 25px 25px 0px 0px;
+    }
+    .label {
+        font-size: 0.8em;
+    }
+}
+
+@media screen and (max-width:350px) {
+    .container {
+        height: fit-content;
+        margin: 1rem 0;
+    }
+    .section {
+        height: 240px;
+    }
+}
+
+@media screen and (max-width:290px) {
+    .container {
+        height: fit-content;
+        margin: 0.8rem 0;
+    }
+    .section {
+        height: 240px;
+    }
+    .heading {
+        font-size: 2.5rem;
+    }
+    .para {
+        font-size: 13px;
+        bottom: 10rem;
+        left: 2.4rem;
+        font-weight: 900;
+        max-width: 110px;
+    }
+}

@@ -1,0 +1,95 @@
+.container {
+    width: 280px;
+    height: auto;
+    background: var(--white);
+    border-radius: 5px 5px 25px 25px;
+    color: var(--blue);
+    box-shadow: 0 5px 30px rgb(0 0 0 / 10%);
+    /* padding: 2vh 0vw; */
+}
+
+.title {
+    font-weight: 900;
+    font-size: 18px;
+    padding: 1vw;
+    background: var(--blue);
+    color: var(--white);
+    /* border-left: 1vw solid var(--blue); */
+    /* border: 1px solid var(--blue); */
+    border-radius: 5px 5px 25px 25px;
+    margin: 0;
+    box-shadow: 0 0px 30px rgb(0 0 0 / 30%);
+}
+
+.para {
+    font-weight: 900;
+    margin: 4vh 1.5vw 2vh 1.5vw;
+    height: 9vw;
+}
+
+button {
+    padding: 1vh 1vw;
+    border-radius: 25px;
+    background-color: var(--white);
+    border: 1px solid var(--blue);
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+    margin: 1.5vh 0vw;
+}
+
+button:hover {
+    box-shadow: 1px 1px 3px;
+    transition: 0.3s;
+    cursor: pointer;
+    background-color: var(--blue);
+    color: var(--white);
+}
+
+@media screen and (max-width: 1024px) {
+    .container {
+        width: 10vw;
+    }
+}
+
+@media screen and (max-width: 860px) {
+    .para {
+        width: auto;
+        height: auto;
+    }
+    button {
+        padding: 1vh 5vw;
+    }
+    .container {
+        width: auto;
+        margin: 2vh 1vw;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .title {
+        font-size: 18px;
+    }
+    .para {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .title {
+        font-size: 16px;
+    }
+    .para {
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .title {
+        font-size: 16px;
+        font-weight: bold;
+    }
+    .para {
+        font-size: 13px;
+        font-weight: bold;
+    }
+}

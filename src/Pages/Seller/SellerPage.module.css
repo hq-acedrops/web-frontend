@@ -1,0 +1,203 @@
+ul {
+    padding: 0;
+}
+
+.container {
+    max-width: 70%;
+    margin: auto;
+    margin-top: 5rem;
+}
+
+.heading {
+    font-weight: 700;
+    font-size: 3rem;
+    color: var(--grey);
+}
+
+.headerImg {
+    width: 600px;
+    margin: 1rem 0;
+}
+
+.sellerheading {
+    font-size: 3rem;
+    color: var(--grey);
+}
+
+.sellerDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* max-width: 80vw; */
+    margin: 0 auto;
+    margin-bottom: 3rem;
+    margin-top: 3rem;
+}
+
+.sellerDivImg {
+    width: 400px;
+}
+
+.sellerInfo {
+    max-width: 400px;
+    width: 95%;
+    padding: 0 0.5rem;
+}
+
+.sellerInfo h3 {
+    margin: 1.5rem 0;
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+
+.sellerInfo p {
+    text-align: left;
+}
+
+.pricing {
+    /* max-width: 700px; */
+    margin: 0 auto;
+    margin-top: 6rem;
+    margin-bottom: 5rem;
+}
+
+.pricingHeading {
+    margin: 2rem 0;
+    font-weight: 700;
+    font-size: 3rem;
+    color: var(--grey);
+}
+
+.pricingInfo {
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    margin: 0 auto;
+    /* width: 600px; */
+}
+
+.pricinglist {
+    /* max-width: 70%; */
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-bottom: 5vh;
+}
+
+.listitems {
+    background: var(--white);
+    border-radius: 25px 25px 25px 25px;
+    color: var(--blue);
+    box-shadow: 0 5px 30px rgb(0 0 0 / 10%);
+    padding: 1vw;
+    margin: 1vw;
+}
+
+li {
+    list-style: none;
+}
+
+@media screen and (max-width: 910px) {
+    .container {
+        max-width: 90%;
+        overflow: hidden;
+    }
+    .sellerInfo h3 {
+        font-size: 2rem;
+    }
+    .heading,
+    .sellerheading,
+    .pricingHeading {
+        font-size: 2.15rem;
+    }
+    .sellerDiv {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .sellerDivImg {
+        width: -webkit-fill-available;
+    }
+    .sellerInfo h3 {
+        font-size: 1.8rem;
+    }
+    .sellerInfo p {
+        font-size: 0.9rem;
+    }
+    .headerImg {
+        width: -webkit-fill-available;
+        max-width: 90vw;
+    }
+    .pricingImg {
+        width: -webkit-fill-available;
+        max-width: 70vw;
+    }
+    .sellerDivImg {
+        width: -webkit-fill-available;
+        max-width: 50vw;
+    }
+    .pricinglist {
+        display: initial;
+    }
+    .listitems {
+        margin: 5vw;
+        padding: 2vw;
+    }
+}
+
+@media screen and (max-width: 340px) {
+    .sellerheading {
+        font-size: 2.4rem;
+    }
+}
+
+@media screen and (max-width: 280px) {
+    .pricingPara {
+        font-size: 14px;
+    }
+    .sellerInfo {
+        height: 200px;
+        align-items: center;
+        justify-content: center;
+        margin-left: 30px;
+    }
+    .sellerDiv {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 1rem;
+    }
+    .sellerInfo p {
+        font-size: 14px;
+    }
+    .sellerInfo h3 {
+        font-size: 24px;
+        font-weight: bolder;
+    }
+    .heading {
+        font-size: 22px;
+        font-weight: bolder;
+    }
+    .listitems p {
+        font-size: 14px;
+        font-weight: 900;
+        align-items: flex-start
+    }
+    .pricingHeading {
+        font-size: 22px;
+    }
+    .pricingInfo {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+    }
+    .pricinglist {
+        margin-left: -20px;
+        align-items: flex-start;
+    }
+}
